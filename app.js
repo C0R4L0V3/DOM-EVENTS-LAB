@@ -29,14 +29,14 @@ const clearDisplay = () => {
 };
 
 const calculate = () => {
-    display.innerText = eval(display.innerText); //<<--- Evalute function simplifying the backend math for calculator
+    display.innerText = eval(display.innerText); 
 }
-
+// Evalute function simplifying the backend math for calculator
 /*----------------------------- Event Listeners -----------------------------*/
 numButton.forEach((button) => {
 button.addEventListener('click', (event) => {
     appendNumOp()
-    // console.log(`Hello`);
+    // console.log(`this is a Num`);
     });
 });
 
@@ -54,10 +54,11 @@ button.addEventListener('click', (event) => {
 
 equalsButton.addEventListener('click', () => {
     calculate()
-    // console.log(`This equals`)
+    // console.log(`This equals something`)
 })
 
 
+//notes to self, querySelectorALL puts all class tagets into an array.
 
 
 
