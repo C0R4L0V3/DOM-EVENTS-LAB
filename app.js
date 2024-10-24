@@ -1,32 +1,64 @@
-/*-------------------------------- Constants --------------------------------*/
- 
-const displayElement = document.querySelector(`.display`)
-const numButtonElement = document.querySelector(`.number`);
-const operateButtonElement = document.querySelector(`.operator`);
-const equalsButtonElement = document.querySelector(`.equals`);
+// /*-------------------------------- Constants --------------------------------*/
+
+// const calculator = document.querySelector('#calculator')
+// const numButton = document.querySelectorAll(`.number`);
+// const operateButton = document.querySelectorAll(`.operator`);
+// const equalsButton = document.querySelector(`.equals`);
+// const display = document.querySelector(`.display`)
 
 
 
-/*-------------------------------- Variables --------------------------------*/
+// /*-------------------------------- Variables --------------------------------*/
 
 
 
-/*------------------------ Cached Element References ------------------------*/
+// /*------------------------ Cached Element References ------------------------*/
 
 
 
-/*----------------------------- Event Listeners -----------------------------*/
+// /*-------------------------------- Functions --------------------------------*/
+
+// const appendNumOp = () => {
+//     display.innerText += event.target.innerText
+
+// }
+
+// const clearDisplay = () => {
+//     display.innerText = ''
+
+// };
+
+// const calculate = () => {
+//     display.innerText = eval(display.innerText);
+// }
+
+// /*----------------------------- Event Listeners -----------------------------*/
+// numButton.forEach((button) => {
+// button.addEventListener('click', (event) => {
+//     console.log(`Hello`);
+//     appendNumOp()
+//     });
+// });
+
+// operateButton.forEach((button) => {
+// button.addEventListener('click', (event) => {
+
+//     if (event.target.innerText === 'C'){
+//         clearDisplay()
+//     } else {
+//         appendNumOp()
+//     }
+//         console.log(`This is an operation`)
+//     });
+// });
+
+// equalsButton.addEventListener('click', () => {
+//     calculate()
+//     console.log(`This equals`)
+// })
 
 
-numButtonElement.addEventListener('click', () => {
-    console.log(`You Clicked me!`)
-});
 
-operateButtonElement.addEventListener('click', () => {
 
-});
 
-equalsButtonElement.addEventListener('click', () => {
 
-});
-/*-------------------------------- Functions --------------------------------*/
