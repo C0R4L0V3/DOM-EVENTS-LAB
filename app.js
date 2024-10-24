@@ -1,61 +1,61 @@
-// /*-------------------------------- Constants --------------------------------*/
+/*-------------------------------- Constants --------------------------------*/
 
-// const calculator = document.querySelector('#calculator')
-// const numButton = document.querySelectorAll(`.number`);
-// const operateButton = document.querySelectorAll(`.operator`);
-// const equalsButton = document.querySelector(`.equals`);
-// const display = document.querySelector(`.display`)
-
-
-
-// /*-------------------------------- Variables --------------------------------*/
+const calculator = document.querySelector('#calculator')
+const numButton = document.querySelectorAll(`.number`);
+const operateButton = document.querySelectorAll(`.operator`);
+const equalsButton = document.querySelector(`.equals`);
+const display = document.querySelector(`.display`)
 
 
 
-// /*------------------------ Cached Element References ------------------------*/
+/*-------------------------------- Variables --------------------------------*/
 
 
 
-// /*-------------------------------- Functions --------------------------------*/
+/*------------------------ Cached Element References ------------------------*/
 
-// const appendNumOp = () => {
-//     display.innerText += event.target.innerText
 
-// }
 
-// const clearDisplay = () => {
-//     display.innerText = ''
+/*-------------------------------- Functions --------------------------------*/
 
-// };
+const appendNumOp = () => {
+    display.innerText += event.target.innerText
 
-// const calculate = () => {
-//     display.innerText = eval(display.innerText);
-// }
+}
 
-// /*----------------------------- Event Listeners -----------------------------*/
-// numButton.forEach((button) => {
-// button.addEventListener('click', (event) => {
-//     console.log(`Hello`);
-//     appendNumOp()
-//     });
-// });
+const clearDisplay = () => {
+    display.innerText = ''
 
-// operateButton.forEach((button) => {
-// button.addEventListener('click', (event) => {
+};
 
-//     if (event.target.innerText === 'C'){
-//         clearDisplay()
-//     } else {
-//         appendNumOp()
-//     }
-//         console.log(`This is an operation`)
-//     });
-// });
+const calculate = () => {
+    display.innerText = eval(display.innerText); //<<--- Evalute function simplifying the backend math for calculator
+}
 
-// equalsButton.addEventListener('click', () => {
-//     calculate()
-//     console.log(`This equals`)
-// })
+/*----------------------------- Event Listeners -----------------------------*/
+numButton.forEach((button) => {
+button.addEventListener('click', (event) => {
+    appendNumOp()
+    // console.log(`Hello`);
+    });
+});
+
+operateButton.forEach((button) => {
+button.addEventListener('click', (event) => {
+
+    if (event.target.innerText === 'C'){
+        clearDisplay()
+    } else {
+        appendNumOp()
+    }
+    // console.log(`This is an operation`)
+    });
+});
+
+equalsButton.addEventListener('click', () => {
+    calculate()
+    // console.log(`This equals`)
+})
 
 
 
